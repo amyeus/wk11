@@ -31,7 +31,7 @@ document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skip ahead");
 	video.currentTime += 10
 	video.loop = true
-	console.log("Video current time is ", video,currentTime)
+	console.log("Video current time is ", video.currentTime)
 });
 
 document.querySelector("#mute").addEventListener("click", function(){
