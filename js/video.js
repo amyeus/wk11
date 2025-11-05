@@ -8,6 +8,9 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	video.play()
+	video.volume = document.querySelector("#slider").value / 100;
+	document.querySelector("#volume").textContent = video.volume * 100 + "%";
+	console.log("Volume is ", video.volume);
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
